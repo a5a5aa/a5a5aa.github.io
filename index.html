@@ -334,16 +334,14 @@
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js' integrity='sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==' crossorigin='anonymous'></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
-  </script>
-  <script>
     // back-to-top
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 500) {
-            $('.toTop').show();
-        } else {
-            $('.toTop').hide();
-        }
+      console.log($(this).innerWidth())
+      if ($(this).scrollTop() > 500) {
+          $('.toTop').show();
+      } else {
+          $('.toTop').hide();
+      }
     });
 
     // 小尺寸 navbar
@@ -354,6 +352,15 @@
     $('.tab').click(function() {
       $('.navLink-xs').css('display','none');
     })
+
+    $(window).resize(function() {
+      if ($(this).width() >= 576) {
+        $('.navLink-xs').css('display', 'none');
+      }
+    });
+
+    AOS.init();
+
   </script>
 </body>
 </html>

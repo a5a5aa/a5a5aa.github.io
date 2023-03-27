@@ -221,9 +221,10 @@ nav {
 }
 
 .aboutText {
+  width: 100%;
   text-align: justify;
   letter-spacing: 3px;
-  padding: 0 25px 0 50px;
+  padding: 0 25px 0 70px;
   text-indent: -1rem;
 }
 
@@ -394,10 +395,6 @@ footer {
   nav{
     position: relative;
     background: none;
-  }
-
-  .navLink-xs {
-    display: none;
   }
 
   .burger {
