@@ -4,6 +4,7 @@
   margin: auto;
   transition: all .3s;
   box-sizing: border-box;
+  list-style: none;
 }
 /* golbal-end */
 
@@ -139,8 +140,7 @@
 /* navbar */
 nav {
   width: 95%;
-  background:#FFF;
-  box-shadow: 0px 0px 0px #F2F2F2;
+  background:rgba(255,255,255,.95);
   border-bottom: 1px solid #2D2D2D ;
   position: fixed;
   top: 0;
@@ -153,7 +153,7 @@ nav {
   z-index:2000;
   transition: none!important;
   display: none;
-  top: 45px;
+  top: 47px;
   right: 0%;
   position: absolute;
   width: 35%;
