@@ -244,6 +244,12 @@ nav {
   border-left: 1px solid #2D2D2D;
 }
 
+.experience ul img {
+  width: 30px;
+  height: 30px;
+  margin-right: 3px;
+}
+
 .experience .title {
   padding: 5px 15px;
   background:#8C3E3E ;
